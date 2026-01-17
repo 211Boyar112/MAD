@@ -8,7 +8,7 @@
     <title>MadCasino Login – Reviews, Sign In, 2026 Bonuses</title>
     <meta name="description" content="An independent step-by-step guide for UK players – from accessing your account to an honest assessment of the casino and its promotions.">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/images/favicon.ico">    
+    <link rel="shortcut icon" href="/images/favicon.ico">  
     <!-- Canonical - Main Page -->
     <link rel="canonical" href="https://madcasino.it.com/">
     
@@ -208,13 +208,13 @@
             text-decoration: underline;
         }
         
-        /* Hero Section */
+        /* Hero Section - ИСПРАВЛЕНО: убран черный текст */
         .hero {
             background-image: url('/images/hero-background.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            color: white;
+            color: white; /* Установлен белый цвет для всего текста */
             padding: 4rem 2rem;
             text-align: center;
             border-radius: 15px;
@@ -227,7 +227,7 @@
             justify-content: center;
         }
         
-        /* Hero overlay for better text readability */
+        /* Hero overlay - сделано темнее для лучшей читаемости */
         .hero::before {
             content: '';
             position: absolute;
@@ -235,7 +235,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(rgba(26, 35, 126, 0.85), rgba(40, 53, 147, 0.9));
+            background: linear-gradient(rgba(26, 35, 126, 0.9), rgba(40, 53, 147, 0.95));
             z-index: 1;
         }
         
@@ -255,15 +255,23 @@
             font-size: 2.5rem;
             margin-bottom: 1rem;
             line-height: 1.2;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            color: white; /* Явно указан белый цвет */
         }
         
         .hero-subtitle {
             font-size: 1.2rem;
             margin-bottom: 2rem;
             opacity: 0.95;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
             font-weight: 400;
+            color: white; /* Явно указан белый цвет */
+        }
+        
+        .hero p {
+            margin-bottom: 1rem;
+            color: white; /* Явно указан белый цвет */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
         }
         
         .hero-buttons {
@@ -456,6 +464,7 @@
             text-decoration: underline;
         }
         
+        /* Responsible Logos - ИСПРАВЛЕНО: убрано затемнение (filter и opacity) */
         .responsible-logos {
             display: flex;
             justify-content: center;
@@ -473,13 +482,12 @@
             width: auto;
             max-width: 150px;
             object-fit: contain;
-            filter: brightness(0) invert(1);
-            opacity: 0.9;
-            transition: opacity 0.3s;
+            /* Убраны filter и opacity для нормального отображения */
+            transition: transform 0.3s;
         }
         
         .responsible-logos img:hover {
-            opacity: 1;
+            transform: scale(1.05);
         }
         
         .footer-disclaimer {
@@ -927,5 +935,4 @@
         <img src="https://analytics.example.com/track?page=home" style="display:none;" alt="" width="1" height="1">
     </noscript>
 </body>
-
 </html>
