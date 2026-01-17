@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Page Not Found – 404</title>
+    <meta name="description" content="The page you're looking for cannot be found. Return to MadCasino Guide homepage or browse our available content.">
+    
+    
+    <!-- Robots -->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Page Not Found – 404">
+    <meta property="og:description" content="The page you're looking for cannot be found on MadCasino Guide.">
+    <meta property="og:image" content="https://madcasino.it.com/images/404-error-og.jpg">
+    <meta property="og:url" content="https://madcasino.it.com/404">
+    <meta property="og:site_name" content="MadCasino Guide">
+    <meta property="og:locale" content="en_GB">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Page Not Found – 404">
+    <meta name="twitter:description" content="The page you're looking for cannot be found on MadCasino Guide.">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://madcasino.it.com">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://madcasino.it.com/404/#webpage",
+        "url": "https://madcasino.it.com/404",
+        "name": "Page Not Found – 404 ",
+        "description": "404 error page for MadCasino Guide indicating requested page cannot be found",
+        "isPartOf": {
+            "@id": "https://madcasino.it.com/#website"
+        },
+        "datePublished": "2026-01-08T00:00:00+00:00",
+        "dateModified": "2026-01-08T00:00:00+00:00",
+        "inLanguage": "en-GB"
+    }
+    </script>
+    
+    <style>
+        /* CSS Reset & Base Styles - СОГЛАСОВАНО С ГЛАВНОЙ СТРАНИЦЕЙ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+        }
+        
+        /* Header & Navigation - ТАК ЖЕ КАК НА ГЛАВНОЙ */
+        header {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .main-nav {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .main-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .main-nav a:hover {
+            color: #ffd54f;
+        }
+        
+        /* Main Content Container - ТАК ЖЕ КАК НА ГЛАВНОЙ */
+        main {
+            background: white;
+            border-radius: 15px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        /* Error Content - НОВЫЕ СТИЛИ ДЛЯ 404 */
+        .error-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .error-header {
+            margin-bottom: 3rem;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            color: #1a237e;
+            line-height: 1;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .error-code::after {
+            content: '404';
+            position: absolute;
+            font-size: 10rem;
+            font-weight: 900;
+            color: rgba(26, 35, 126, 0.05);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+        
+        .error-title {
+            color: #1a237e;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .error-message {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Error Illustration */
+        .error-illustration {
+            width: 200px;
+            height: 200px;
+            margin: 2rem auto;
+            position: relative;
+        }
+        
+        .magnifying-glass {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            border: 8px solid #f44336;
+            border-radius: 50%;
+            margin: 0 auto;
+            animation: search 4s ease-in-out infinite;
+        }
+        
+        .magnifying-glass::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 8px;
+            background: #f44336;
+            bottom: -25px;
+            right: -15px;
+            transform: rotate(45deg);
+            border-radius: 4px;
+        }
+        
+        @keyframes search {
+            0%, 100% { transform: translateX(0) rotate(0); }
+            25% { transform: translateX(-20px) rotate(-5deg); }
+            75% { transform: translateX(20px) rotate(5deg); }
+        }
+        
+        /* Possible Causes - ТАК ЖЕ КАК НА ДРУГИХ СТРАНИЦАХ */
+        .causes {
+            background: #f5f5f5;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: left;
+            border-left: 4px solid #283593;
+        }
+        
+        .causes h3 {
+            color: #283593;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .causes ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .causes li {
+            padding: 0.5rem 0;
+            color: #555;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        
+        .causes li::before {
+            content: '•';
+            color: #283593;
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 0.8;
+            flex-shrink: 0;
+        }
+        
+        /* Action Buttons - ТАК ЖЕ КАК НА ГЛАВНОЙ */
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        
+        .btn {
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background: #ff5722;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: #ffd54f;
+            color: #333;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Quick Links - СОГЛАСОВАНО С ГЛАВНОЙ */
+        .quick-links {
+            margin: 2.5rem 0;
+        }
+        
+        .quick-links h3 {
+            color: #1a237e;
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+            border-bottom: 2px solid #e8eaf6;
+            padding-bottom: 0.5rem;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .link-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .link-card:hover {
+            background: white;
+            border-color: #283593;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .link-card h4 {
+            color: #283593;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Technical Info - КАК В ОСНОВНОМ САЙТЕ */
+        .tech-info {
+            background: #e8eaf6;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        
+        .tech-info h3 {
+            color: #283593;
+            margin-bottom: 0.75rem;
+        }
+        
+        .tech-info code {
+            background: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #f44336;
+        }
+        
+        /* Footer - ТОЧНО ТАКОЙ ЖЕ КАК НА ГЛАВНОЙ СТРАНИЦЕ */
+        footer {
+            background: #1a237e;
+            color: #e3f2fd;
+            padding: 3rem 2rem 2rem;
+            border-radius: 15px 15px 0 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .footer-nav a {
+            color: #bbdefb;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .footer-nav a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .responsible-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        
+        .responsible-logos img {
+            height: 50px;
+            width: auto;
+            max-width: 150px;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+        
+        .responsible-logos img:hover {
+            opacity: 1;
+        }
+        
+        .footer-disclaimer {
+            text-align: center;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #e3f2fd;
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        
+        .footer-disclaimer strong {
+            color: white;
+            font-weight: 600;
+        }
+        
+        .footer-disclaimer p {
+            margin-bottom: 1rem;
+            color: #e3f2fd;
+        }
+        
+        .footer-disclaimer p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            color: #90caf9;
+            font-size: 0.85rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Responsive Design - ТОЧНО ТАК ЖЕ КАК НА ГЛАВНОЙ */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .main-nav {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            main {
+                padding: 2rem;
+            }
+            
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-title {
+                font-size: 1.8rem;
+            }
+            
+            .error-message {
+                font-size: 1rem;
+            }
+            
+            .error-illustration {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .magnifying-glass {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+            
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .responsible-logos {
+                gap: 1rem;
+            }
+            
+            .responsible-logos img {
+                height: 40px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 0 10px;
+            }
+            
+            main {
+                padding: 1.5rem;
+            }
+            
+            .error-code {
+                font-size: 4rem;
+            }
+            
+            .error-title {
+                font-size: 1.6rem;
+            }
+            
+            .footer-disclaimer {
+                padding: 1rem;
+                font-size: 0.8rem;
+            }
+        }
+        
+        /* Reduced Motion Support */
+        @media (prefers-reduced-motion: reduce) {
+            .magnifying-glass {
+                animation: none;
+            }
+            
+            .btn:hover {
+                transform: none;
+            }
+            
+            .link-card:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation - ТОЧНО ТАКОЙ ЖЕ КАК НА ГЛАВНОЙ -->
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">MadCasino Guide</a>
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms & Conditions</a>
+                <a href="/responsible">Responsible Gaming</a>
+                <a href="/disclaimer">Disclaimer</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="error-content">
+            <!-- Error Header -->
+            <div class="error-header">
+                <div class="error-code">404</div>
+                <h1 class="error-title">Page Not Found</h1>
+                <p class="error-message">
+                    The page you're looking for seems to have disappeared. 
+                    It might have been moved, deleted, or perhaps never existed.
+                </p>
+            </div>
+            
+            <!-- Error Illustration -->
+            <div class="error-illustration">
+                <div class="magnifying-glass"></div>
+            </div>
+            
+            <!-- Possible Causes -->
+            <div class="causes">
+                <h3>Possible Reasons:</h3>
+                <ul>
+                    <li>The page may have been moved or renamed</li>
+                    <li>You might have typed the URL incorrectly</li>
+                    <li>The page could be temporarily unavailable</li>
+                    <li>You followed an outdated or broken link</li>
+                </ul>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <a href="/" class="btn btn-primary">🏠 Return to Homepage</a>
+                <a href="javascript:history.back()" class="btn btn-secondary">↩ Go Back</a>
+            </div>
+            
+            <!-- Quick Links - ТАКИЕ ЖЕ ССЫЛКИ КАК В ОСНОВНОЙ НАВИГАЦИИ -->
+            <div class="quick-links">
+                <h3>Quick Navigation</h3>
+                <div class="links-grid">
+                    <a href="/" class="link-card">
+                        <h4>Home</h4>
+                        <p>Return to the main landing page with MadCasino login guide and information</p>
+                    </a>
+                    <a href="/privacy" class="link-card">
+                        <h4>Privacy Policy</h4>
+                        <p>Learn how we collect, use, and protect your personal information</p>
+                    </a>
+                    <a href="/terms" class="link-card">
+                        <h4>Terms & Conditions</h4>
+                        <p>Read our legal terms and conditions for using the website</p>
+                    </a>
+                    <a href="/responsible" class="link-card">
+                        <h4>Responsible Gaming</h4>
+                        <p>Information about safe gaming practices and support resources</p>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Technical Information -->
+            <div class="tech-info">
+                <h3>Technical Details</h3>
+                <p><strong>Error Code:</strong> 404 Not Found</p>
+                <p><strong>Requested URL:</strong> <code id="requestedUrl"></code></p>
+                <p><strong>Timestamp:</strong> <span id="errorTimestamp"></span></p>
+                <p><em>If you believe this is an error, please <a href="/contact">contact us</a>.</em></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer - ТОЧНО ТАКОЙ ЖЕ КАК НА ГЛАВНОЙ СТРАНИЦЕ -->
+    <footer>
+        <div class="footer-content">
+            <!-- Footer Navigation - ТЕ ЖЕ ПУНКТЫ МЕНЮ -->
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms & Conditions</a>
+                <a href="/responsible">Responsible Gaming</a>
+                <a href="/disclaimer">Disclaimer</a>
+                <a href="/contact">Contact</a>
+            </nav>
+            
+            <!-- Responsible Gaming Logos -->
+            <div class="responsible-logos">
+                <img src="/images/footer-begambleaware.png" 
+                     alt="BeGambleAware logo - Promoting responsible gambling" 
+                     width="150" 
+                     height="50"
+                     loading="lazy">
+                <img src="/images/footer-gamban.png" 
+                     alt="Gamban gambling blocking software logo" 
+                     width="150" 
+                     height="50"
+                     loading="lazy">
+                <img src="/images/footer-gamcare.png" 
+                     alt="GamCare support service for gambling problems" 
+                     width="150" 
+                     height="50"
+                     loading="lazy">
+                <img src="/images/footer-betblocker.png" 
+                     alt="BetBlocker gambling site blocking application" 
+                     width="150" 
+                     height="50"
+                     loading="lazy">
+            </div>
+            
+            <!-- Footer Disclaimer -->
+            <div class="footer-disclaimer">
+                <p><strong>Disclaimer:</strong> This website operates as an independent informational resource. We are not affiliated with, endorsed by, or connected to MadCasino or any related entities. All content serves informational purposes only. Online gambling involves financial risk and may be addictive. Play responsibly and only if legally permitted in your jurisdiction.</p>
+                <p><strong>Haftungsausschluss:</strong> Diese Website dient als unabhängige Informationsquelle. Wir stehen nicht in Verbindung mit MadCasino oder damit verbundenen Unternehmen. Alle Inhalte dienen ausschließlich Informationszwecken. Online-Glücksspiel birgt finanzielle Risiken und kann süchtig machen. Spielen Sie verantwortungsvoll und nur, wenn es in Ihrer Jurisdiktion rechtlich erlaubt ist.</p>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>© 2026 MadCasino Guide – Independent Information Resource. All rights reserved.</p>
+                <p>Page not found - Error 404</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Display the requested URL and timestamp
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show requested URL
+            const requestedUrl = document.getElementById('requestedUrl');
+            requestedUrl.textContent = window.location.pathname;
+            
+            // Show current timestamp
+            const timestamp = document.getElementById('errorTimestamp');
+            const now = new Date();
+            timestamp.textContent = now.toLocaleString('en-GB', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                timeZoneName: 'short'
+            });
+            
+            // Handle "Go Back" button with no history
+            const goBackBtn = document.querySelector('a[href="javascript:history.back()"]');
+            goBackBtn.addEventListener('click', function(e) {
+                if (window.history.length <= 1) {
+                    e.preventDefault();
+                    // Show message
+                    const errorMessage = document.querySelector('.error-message');
+                    const originalText = errorMessage.textContent;
+                    errorMessage.innerHTML = 'No previous page in history. Please use the navigation below.<br><span style="color: #ff5722; font-size: 0.9em;">Redirecting to homepage in 5 seconds...</span>';
+                    errorMessage.style.color = '#f44336';
+                    
+                    // Redirect to homepage after 5 seconds
+                    setTimeout(() => {
+                        window.location.href = '/';
+                    }, 5000);
+                    
+                    // Reset message after 3 seconds
+                    setTimeout(() => {
+                        errorMessage.textContent = originalText;
+                        errorMessage.style.color = '';
+                    }, 3000);
+                }
+            });
+            
+            // Add click animation to error code
+            const errorCode = document.querySelector('.error-code');
+            errorCode.style.cursor = 'pointer';
+            errorCode.addEventListener('click', function() {
+                this.style.transform = 'scale(1.1)';
+                this.style.transition = 'transform 0.3s';
+                
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 300);
+            });
+            
+            // Auto-focus for accessibility
+            const mainContent = document.querySelector('main');
+            mainContent.setAttribute('tabindex', '-1');
+            mainContent.focus();
+            
+            // Log the error for analytics (simulated)
+            console.log('404 Error:', {
+                url: window.location.href,
+                referrer: document.referrer,
+                userAgent: navigator.userAgent,
+                timestamp: now.toISOString()
+            });
+        });
+        
+        // Support for reduced motion preference
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.querySelectorAll('*').forEach(el => {
+                el.style.animationPlayState = 'paused';
+                el.style.transition = 'none';
+            });
+        }
+    </script>
+</body>
+</html>

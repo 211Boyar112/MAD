@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://madcasino.it.com/sitemap.xml
